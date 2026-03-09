@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>Project Dashboard</h1>
+
+<button onclick="logout()" class="logout-btn">Logout</button>
+
+<h3>Create Project</h3>
+
+<input id="projectName" placeholder="Project name">
+
+<button onclick="createProject()">Add Project</button>
+
+<ul id="projectList"></ul>
+
+<hr>
+
+<h3>Create Task</h3>
+
+<input id="projectId" placeholder="Project ID">
+
+<input id="taskTitle" placeholder="Task title">
+
+<button onclick="createTask()">Add Task</button>
+
+<ul id="taskList"></ul>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

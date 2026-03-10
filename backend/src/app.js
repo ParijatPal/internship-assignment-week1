@@ -52,7 +52,7 @@ app.use("/api", taskRoutes);
 // Health check route
 app.get("/", (req, res) => {
   res.status(200).json({
-    message: "Backend Server Running Successfully 🚀",
+    message: "Backend Server Running Successfully ",
     environment: process.env.NODE_ENV || "development",
   });
 });
@@ -66,19 +66,19 @@ const PORT = process.env.PORT || 5000;
 const startServer = async () => {
   try {
     await sequelize.authenticate();
-    console.log("Database connected ✅");
+    console.log("Database connected successfully ");
 
     await sequelize.sync({ alter: true });
-    console.log("Tables synced ✅");
+    console.log("Tables synced successfully ");
 
     app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT} 🚀`);
+      console.log(`Server running on port ${PORT} `);
       console.log(`DB Host: ${process.env.DB_HOST}`);
       console.log(`DB Port: ${process.env.DB_PORT}`);
     });
 
   } catch (error) {
-    console.error("DB connection error ❌", error.message);
+    console.error("DB connection error ", error.message);
     process.exit(1);
   }
 };

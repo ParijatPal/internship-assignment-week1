@@ -1,5 +1,5 @@
-const API = "http://localhost:5000/api";
-
+const API = "https://internship-assignment-week1.onrender.com/api";
+/*const API = "http://localhost:5000/api";*/
 /* ---------------- REGISTER ---------------- */
 
 async function register() {

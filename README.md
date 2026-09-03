@@ -2,16 +2,7 @@
 
 A secure, production-ready REST API built with Node.js, Express, PostgreSQL, and Sequelize. Features JWT authentication, structured MVC architecture, and full CRUD operations for tasks.
 
----
 
-## Live Deployment
-
-| Service | URL |
-|---|---|
-| Backend API | https://internship-assignment-week1.onrender.com |
-| Frontend | https://internship-assignment-week1-1-frontend.onrender.com |
-
----
 
 ## Project Description
 
